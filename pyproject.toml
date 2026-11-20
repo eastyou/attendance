@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "attendance"
+version = "0.1.0"
+description = "班级考勤表：名单一键生成 A4 横向可打印考勤表"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["attendance", "classroom", "teacher", "print", "csv", "cli"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+
+[project.scripts]
+attendance = "attendance.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/attendance"
+Source = "https://github.com/eastyou/attendance"
+
+[tool.setuptools]
+packages = ["attendance"]
